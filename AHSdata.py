@@ -140,8 +140,8 @@ inside_threshold = int(input("Enter a threshold value to check: "))
 carbon_levels_without_holidays['date']=carbon_levels_without_holidays.index.date
 #threshold = 22
 #high_temp_data = carbon_levels_without_holidays[carbon_levels_without_holidays[weather_temp_column] > threshold]
-# Iterate over each temperature column
 
+#iterate over each temperature column
 for col in temp_columns:
     #find rows where this sensor exceeds the threshold
     high_temp_data = carbon_levels_without_holidays[carbon_levels_without_holidays[col] > inside_threshold]
